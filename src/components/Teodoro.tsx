@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { CapsuleCollider } from "@react-three/rapier";
 import { useEffect, useState, Suspense } from "react";
-
 import * as THREE from "three";
 
 export const Teodoro = () => {

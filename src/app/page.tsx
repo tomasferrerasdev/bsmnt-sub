@@ -2,15 +2,11 @@
 
 import { Sub } from "@/components/Sub";
 import { KeyboardControls } from "@react-three/drei";
-import { Canvas, useThree } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import Ecctrl from "ecctrl";
 import { Physics } from "@react-three/rapier";
 import { Teodoro } from "@/components/Teodoro";
 import { EffectComposer, Pixelation } from "@react-three/postprocessing";
-import { useRef } from "react";
-import { useEffect } from "react";
-import * as THREE from "three";
-import { useControls } from "leva";
 import { RectAreaLightUniformsLib } from "three/examples/jsm/Addons.js";
 
 const keyboardMap = [

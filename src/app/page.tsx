@@ -8,6 +8,7 @@ import { EffectComposer, Pixelation } from "@react-three/postprocessing";
 import { RectAreaLightUniformsLib } from "three/examples/jsm/Addons.js";
 import { Sub } from "@/components/Sub";
 import { Teodoro } from "@/components/Teodoro";
+import { Legs } from "@/components/Legs";
 
 const keyboardMap = [
   { name: "forward", keys: ["ArrowUp", "KeyW"] },
@@ -38,11 +39,11 @@ export default function Home() {
               autoBalanceSpringOnY={0.3}
               autoBalanceDampingOnY={0.03}
             >
-              <Teodoro />
+              <Legs />
             </Ecctrl>
           </KeyboardControls>
         </Physics>
-        <ambientLight color={"#B3DEB2"} intensity={0.02} />
+        <ambientLight color={"#B3DEB2"} intensity={0.01} />
 
         <rectAreaLight
           color="#FFA500"
@@ -53,16 +54,16 @@ export default function Home() {
           height={3}
         />
 
-        <pointLight color="orange" position={[-0.5, 1.7, -2.5]} intensity={8} />
-        <pointLight color="white" position={[2.9, 4, -38]} intensity={1.7} />
-        <pointLight color="white" position={[2.9, 4, -30]} intensity={1.7} />
-        <pointLight color="white" position={[2.9, 4, -4]} intensity={1.7} />
-        <pointLight color="white" position={[2.9, 4, -0]} intensity={1.7} />
-        <pointLight color="white" position={[2.9, 4, 4]} intensity={1.7} />
-        <pointLight color="white" position={[2.9, 4, 8]} intensity={1.7} />
-        <EffectComposer>
-          <Pixelation granularity={5} />
-        </EffectComposer>
+        <pointLight color="orange" position={[-0.5, 1.7, -2.5]} intensity={5} />
+        <pointLight color="white" position={[2.9, 4, -38]} intensity={0.7} />
+        <pointLight color="white" position={[2.9, 4, -30]} intensity={0.7} />
+        <pointLight color="white" position={[2.9, 4, -4]} intensity={0.7} />
+        <pointLight color="white" position={[2.9, 4, -0]} intensity={0.7} />
+        <pointLight color="white" position={[2.9, 4, 4]} intensity={0.7} />
+        <pointLight color="white" position={[2.9, 4, 8]} intensity={0.7} />
+        {/* <EffectComposer>
+          <Pixelation granularity={4} />
+        </EffectComposer> */}
       </Canvas>
     </main>
   );
